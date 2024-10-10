@@ -11,34 +11,32 @@
   gap: 1rem;
 }
 
-.title {
+.section__title {
   font-size: 3rem;
   @media screen and (max-width: 600px) {
     font-size: 2rem;
   }
 }
 
-.subtitle {
+.section__subtitle {
   font-size: 2rem;
   @media screen and (max-width: 600px) {
     font-size: 1.5rem;
   }
 }
 
-.link {
+.section__link {
+  -webkit-tap-highlight-color: transparent;
   transition: color 0.5s;
-}
-
-.link {
   color: var(--link-text);
   text-decoration: none;
 }
 
-.link:hover {
+.section__link:hover {
   color: var(--link-text-hover);
   text-decoration: underline;
 }
 
-.link:checked {
+.section__link:checked {
   text-decoration: line-through;
 }
