@@ -1,0 +1,40 @@
+body {
+  height: 100dvh;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+.main {
+  height: 100%;
+}
+
+.main,
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.link {
+  transition: color 0.5s;
+}
+
+.link {
+  color: var(--link-text);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--link-hover);
+}
