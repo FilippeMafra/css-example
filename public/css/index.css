@@ -40,3 +40,15 @@
 .section__link:checked {
   text-decoration: line-through;
 }
+
+.section__description {
+  font-weight: 300;
+  max-width: 42rem;
+}
+
+.section__divider {
+  width: 100%;
+  max-width: 42rem;
+  border: dashed var(--divider);
+  border-width: 0.125rem 0 0 0;
+}
