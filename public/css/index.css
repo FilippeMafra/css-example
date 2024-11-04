@@ -30,6 +30,14 @@
   transition: color 0.5s;
   color: var(--link-text);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.section__image--github {
+  width: 1rem;
+  height: 1rem;
 }
 
 .section__link:hover {
@@ -51,4 +59,10 @@
   max-width: 42rem;
   border: dashed var(--divider);
   border-width: 0.125rem 0 0 0;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .section__image--github {
+    filter: invert(1);
+  }
 }
