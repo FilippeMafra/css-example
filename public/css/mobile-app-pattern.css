@@ -1,5 +1,37 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+  height: 3rem;
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  border-bottom: 1px solid var(--nav-divider);
+}
+
+.nav__link {
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.5s;
+  color: var(--nav-text);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--link-text);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  border-top: 1px solid var(--nav-divider);
+}
+
 .main {
-  height: 100%;
+  height: calc(100% - calc(2 * 3rem) - calc(2 * 1px));
 }
 
 .main,
