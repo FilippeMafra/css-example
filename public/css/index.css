@@ -39,6 +39,12 @@ body {
   gap: 0.25rem;
 }
 
+.page_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .section__image--github {
   width: 1rem;
   height: 1rem;
