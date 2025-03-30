@@ -7,15 +7,17 @@ body {
   align-content: space-between;
 }
 
-.nav {
+.header {
   display: grid;
-  grid-auto-flow: column;
-  justify-content: space-around;
-  align-items: center;
   padding: 1rem 1rem;
   background-color: var(--nav-bg);
   color: var(--nav-text);
   border-bottom: var(--border-size) solid var(--nav-divider);
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .nav__link {
