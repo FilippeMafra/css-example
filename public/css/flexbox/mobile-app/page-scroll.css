@@ -4,11 +4,11 @@
   --border-size: 1px;
 }
 
-.page__title {
+.header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
   height: var(--nav-height);
   background-color: var(--nav-bg);
   color: var(--nav-text);
