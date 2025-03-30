@@ -1,54 +1,44 @@
 :root {
+  --nav-height: 3rem;
+  --footer-height: 3rem;
   --border-size: 1px;
 }
 
-body {
-  display: grid;
-  align-content: space-between;
-}
-
 .header {
-  display: grid;
-  padding: 1rem 1rem;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  height: var(--nav-height);
   background-color: var(--nav-bg);
   color: var(--nav-text);
   border-bottom: var(--border-size) solid var(--nav-divider);
 }
 
-.nav {
-  display: grid;
-  grid-auto-flow: column;
-}
-
-.nav__link {
-  -webkit-tap-highlight-color: transparent;
-  transition: color 0.5s;
-  color: var(--nav-text);
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  color: var(--link-text);
-}
-
 .footer {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: var(--footer-height);
   background-color: var(--nav-bg);
-  padding: 0.5rem 0;
   color: var(--nav-text);
   border-top: var(--border-size) solid var(--nav-divider);
 }
 
-.main,
+.main {
+  height: calc(
+    100% - calc(var(--nav-height) + var(--footer-height)) -
+      calc(2 * var(--border-size))
+  );
+  overflow: scroll;
+}
+
 .section {
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .section__title {
@@ -77,4 +67,19 @@ body {
 
 .section__link:checked {
   text-decoration: line-through;
+}
+
+.page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.page__list__item {
+  list-style: decimal;
+}
+
+.item__description {
+  text-align: start;
 }

@@ -4,15 +4,20 @@
   --border-size: 1px;
 }
 
-.nav {
+.header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 0 1rem;
   height: var(--nav-height);
   background-color: var(--nav-bg);
   color: var(--nav-text);
   border-bottom: var(--border-size) solid var(--nav-divider);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .nav__link {
